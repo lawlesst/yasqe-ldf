@@ -8,7 +8,7 @@ A demo/experiment of querying a [Linked Data Fragments](http://linkeddatafragmen
 * cd into the cloned directory and `python -m SimpleHTTPServer'
 * visit `http://localhost:8000/`
 
-###Notes and
+###Notes
 
 Will query [DBPedia Linked Data Fragments](http://fragments.dbpedia.org/2014/en) by default.
 
