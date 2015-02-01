@@ -5,6 +5,7 @@ var logger = new ldf.Logger();
 logger._print = function (items) { $('#status').toggle(); };
 
 YASQE.defaults.sparql.showQueryButton = true;
+YASQE.defaults.value = "SELECT ?univ WHERE {\n ?univ a <http://dbpedia.org/ontology/BaseballTeam> .\n} \nLIMIT 10";
 YASQE.defaults.sparql.callbacks.success =  function(data){console.log("success", data);};
 YASQE.defaults.createShareLink = false;
 YASQE.executeQuery = function(yasqe, callbackOrConfig) {
