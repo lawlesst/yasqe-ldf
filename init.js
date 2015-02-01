@@ -1,5 +1,5 @@
-//var startFragment = "http://fragments.dbpedia.org/2014/en";
-var startFragment = "http://ldf-vivo.herokuapp.com/orgref";
+var startFragment = "http://fragments.dbpedia.org/2014/en";
+//var startFragment = "http://ldf-vivo.herokuapp.com/orgref";
 // Add log lines to the log element
 var logger = new ldf.Logger();
 logger._print = function (items) { $('#status').toggle(); };
@@ -24,7 +24,8 @@ YASQE.executeQuery = function(yasqe, callbackOrConfig) {
         formatRow(chunk);
     });
     results.on('end', function() {
-      $status.text("Query finished.").show();
+      $status.text("Query finished.");
+      $status.show();
     });
 };
 
