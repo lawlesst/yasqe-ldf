@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yasgui-ldf</title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel='stylesheet' type='text/css'/>
+  <link href='//cdn.jsdelivr.net/g/yasqe@2.2(yasqe.min.css),yasr@2.4(yasr.min.css)' rel='stylesheet' type='text/css'/>
+  <style>
+    body {font: 16px/26px Helvetica, Helvetica Neue, Arial;}
+    #results {
+      width: 80%;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em;
+    }
+    .results-box {
+      background-color: #EFEAEA;
+    }
+    .spinner {
+      display: none;
+    }
+    #header-container {
+      background: navy;
+      box-shadow: 0 5px 10px #aaa;
+    }
+    header {
+      height: 2em;
+      padding: 1em;
+    }
+    header h1 {
+      margin:0;
+      margin-left: 1em;
+      color: white;
+    }
+    .main {
+      margin-top: 1em;
+      padding-top: 1em;
+    }
+    #yasqe {
+      width: 50%;
+      min-width: 800px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .container {height: 2em; margin-left: 80%;}
+    .logos img {
+      float: right;
+      padding-right: 1em;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-container" class="clearfix">
+    <header><h1>Query LDF with YASQE</h1></header>
+  </div>
+  <div class="main">
+      <div id="yasqe"></div>
+      <div class="container">
+        <span id="status"></span>
+      </div>
+      <div id="results">
+        <h3>Query results:</h3>
+        <button id="stop">Stop query</step>
+        <pre class="results-box"></pre>
+      </div>
+      <div class="logos">
+        <img src="//yasqe.yasgui.org/doc/imgs/yasqe.png"/>
+        <img src="//linkeddatafragments.org/images/logo.svg"/>
+      </div>
+  </div>
+  <script src="./dependencies/jquery-2.1.0.js"></script>
+  <script src="./dependencies/ldf-client-browser.js"></script>
+  <script src="./dependencies/prefixes.js"></script>
+  <script src='//cdn.jsdelivr.net/yasqe/2.2/yasqe.bundled.min.js'></script>
+  <script src="init.js"></script>
+</body>
